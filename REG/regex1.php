@@ -1,10 +1,10 @@
 <?php
 
-//$file = fopen("html_tag.html", "r");
-//$html = fread($file, 4096);
+$file = fopen("sample.html", "r");
+$html = fread($file, 4096);
 
-$url = "http://www.google.com";
-$html = file_get_contents($url);
+//$url = "http://www.google.com";
+//$html = file_get_contents($url);
 
 preg_match_all("/(<([\w]+)[^>]*>)(.*)(<\/\\2>)/", $html, $matches, PREG_SET_ORDER);
 $count = 0;
