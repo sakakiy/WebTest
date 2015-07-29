@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# usage : ruby diff.rb b.txt a.txt [any character => show debug info]
 def read_file(name, array)
   File.open(name){|f|
     f.each_line{|line|
